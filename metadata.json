@@ -1,0 +1,6 @@
+{
+  "name": "Guia ENEM 2026",
+  "description": "Landing page oficial de vendas do Guia ENEM 2026 - Plataforma completa de estudos para o ENEM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

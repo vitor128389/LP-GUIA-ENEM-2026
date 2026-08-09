@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #0F172A;
+    scroll-behavior: smooth;
+  }
+}
+
+.font-heading, .font-display {
+  font-family: 'Sora', 'Poppins', sans-serif;
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom Smooth Transitions & Scrollbars */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sleek Interface Design Theme Utilities */
+.gradient-bg {
+  background: linear-gradient(135deg, #2E5EFF 0%, #06B6D4 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-header {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.section-shadow {
+  box-shadow: 0 4px 24px -2px rgba(46, 94, 255, 0.08);
+}
+
+.sleek-card {
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px -2px rgba(46, 94, 255, 0.06);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sleek-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -4px rgba(46, 94, 255, 0.12);
+  border-color: rgba(46, 94, 255, 0.25);
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, #2E5EFF 0%, #1A46E6 50%, #06B6D4 100%);
+  transition: all 0.25s ease;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -6px rgba(46, 94, 255, 0.35);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #2E5EFF 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+

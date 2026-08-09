@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Logo } from './components/Logo';
-import platformMockupImg from '../public/mockup.png';
 import { 
   BookOpen, 
   CheckCircle2, 

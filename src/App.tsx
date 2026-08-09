@@ -171,7 +171,7 @@ export default function App() {
               {/* Platform Image */}
               <div className="pt-2 max-w-4xl mx-auto flex justify-center">
                 <img
-                  src="/mockup.png"
+                  src="/mockup.webp"
                   alt="Demonstração da plataforma Guia ENEM 2026"
                   className="w-full h-auto max-w-3xl mx-auto pointer-events-none rounded-xl shadow-lg border border-slate-100/50"
                 />

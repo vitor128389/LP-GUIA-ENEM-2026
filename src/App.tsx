@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Logo } from './components/Logo';
-import platformMockupImg from './assets/images/user_mockup.png';
+import platformMockupImg from '../public/mockup.png';
 import { 
   BookOpen, 
   CheckCircle2, 
@@ -170,12 +170,11 @@ export default function App() {
               </p>
 
               {/* Platform Image */}
-              <div className="pt-2 max-w-4xl mx-auto">
+              <div className="pt-2 max-w-4xl mx-auto flex justify-center">
                 <img
-                  src={platformMockupImg}
+                  src="/mockup.png"
                   alt="Demonstração da plataforma Guia ENEM 2026"
-                  className="w-full h-auto mx-auto pointer-events-none"
-                  referrerPolicy="no-referrer"
+                  className="w-full h-auto max-w-3xl mx-auto pointer-events-none rounded-xl shadow-lg border border-slate-100/50"
                 />
               </div>
 

@@ -231,49 +231,49 @@ export default function App() {
               </p>
             </div>
 
-            {/* Pain Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Pain Cards Grid - 2 per row (2x2) */}
+            <div className="grid grid-cols-2 gap-3 sm:gap-6">
               
               {/* Card 1 */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
-                  <Compass className="w-6 h-6" />
+              <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2.5 sm:space-y-4">
+                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
+                  <Compass className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-slate-900">1. Dispersão de Material</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <h3 className="font-heading font-bold text-sm sm:text-lg text-slate-900 leading-snug">1. Dispersão de Material</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Perder horas procurando PDFs desatualizados na internet e assistindo a vídeos soltos no YouTube que não seguem a matriz oficial do ENEM.
                 </p>
               </div>
 
               {/* Card 2 */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
-                  <DollarSign className="w-6 h-6" />
+              <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2.5 sm:space-y-4">
+                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
+                  <DollarSign className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-slate-900">2. Cursinho Absurdamente Caro</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <h3 className="font-heading font-bold text-sm sm:text-lg text-slate-900 leading-snug">2. Cursinho Absurdamente Caro</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Pagar mensalidades abusivas de R$ 300 a R$ 800/mês em cursinhos presenciais ou plataformas gigantescas cheias de aulas arrastadas.
                 </p>
               </div>
 
               {/* Card 3 */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
-                  <Clock className="w-6 h-6" />
+              <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2.5 sm:space-y-4">
+                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
+                  <Clock className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-slate-900">3. Sem Saber por Onde Começar</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <h3 className="font-heading font-bold text-sm sm:text-lg text-slate-900 leading-snug">3. Sem Saber por Onde Começar</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Abrir os livros sem ter um cronograma claro e ficar com aquela sensação angustiante de matéria acumulada e tempo perdido.
                 </p>
               </div>
 
               {/* Card 4 */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-4">
-                <div className="w-12 h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
-                  <FileText className="w-6 h-6" />
+              <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2.5 sm:space-y-4">
+                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
+                  <FileText className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
-                <h3 className="font-heading font-bold text-lg text-slate-900">4. Redação sem Repertório</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <h3 className="font-heading font-bold text-sm sm:text-lg text-slate-900 leading-snug">4. Redação sem Repertório</h3>
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   Travar no tema da redação por não ter repertórios socioculturais curingas e perder pontos valiosos na Competência 2 e 3.
                 </p>
               </div>
@@ -300,52 +300,52 @@ export default function App() {
               </p>
             </div>
 
-            {/* Solutions Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Solutions Grid - 2 per row (2x2) */}
+            <div className="grid grid-cols-2 gap-3 sm:gap-6">
               
-              <div className="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-md hover:border-[#2E5EFF]/40 transition-all flex gap-5">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#2E5EFF] to-[#06B6D4] text-white flex items-center justify-center shrink-0 shadow-lg shadow-[#2E5EFF]/20">
-                  <BookOpen className="w-7 h-7" />
+              <div className="bg-white p-4 sm:p-8 rounded-2xl border border-slate-200/80 shadow-md hover:border-[#2E5EFF]/40 transition-all flex flex-col sm:flex-row gap-3 sm:gap-5">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#2E5EFF] to-[#06B6D4] text-white flex items-center justify-center shrink-0 shadow-lg shadow-[#2E5EFF]/20">
+                  <BookOpen className="w-5 h-5 sm:w-7 sm:h-7" />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="font-heading font-bold text-xl text-slate-900">108 Capítulos Direcionados</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="font-heading font-bold text-sm sm:text-xl text-slate-900 leading-snug">108 Capítulos Direcionados</h3>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                     Conteúdo didático e direto ao ponto focado estritamente no que é cobrado no ENEM. Nada de enrolação ou teorias desnecessárias que só tomam seu tempo.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-md hover:border-[#2E5EFF]/40 transition-all flex gap-5">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#2E5EFF] to-[#06B6D4] text-white flex items-center justify-center shrink-0 shadow-lg shadow-[#2E5EFF]/20">
-                  <HelpCircle className="w-7 h-7" />
+              <div className="bg-white p-4 sm:p-8 rounded-2xl border border-slate-200/80 shadow-md hover:border-[#2E5EFF]/40 transition-all flex flex-col sm:flex-row gap-3 sm:gap-5">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#2E5EFF] to-[#06B6D4] text-white flex items-center justify-center shrink-0 shadow-lg shadow-[#2E5EFF]/20">
+                  <HelpCircle className="w-5 h-5 sm:w-7 sm:h-7" />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="font-heading font-bold text-xl text-slate-900">1.110 Questões Comentadas</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="font-heading font-bold text-sm sm:text-xl text-slate-900 leading-snug">1.110 Questões Comentadas</h3>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                     Aprenda na prática com gabarito explicativo detalhado de cada alternativa (A, B, C, D, E). Entenda por que a certa está certa e por que as erradas estão erradas.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-md hover:border-[#2E5EFF]/40 transition-all flex gap-5">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#2E5EFF] to-[#06B6D4] text-white flex items-center justify-center shrink-0 shadow-lg shadow-[#2E5EFF]/20">
-                  <Sparkles className="w-7 h-7" />
+              <div className="bg-white p-4 sm:p-8 rounded-2xl border border-slate-200/80 shadow-md hover:border-[#2E5EFF]/40 transition-all flex flex-col sm:flex-row gap-3 sm:gap-5">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#2E5EFF] to-[#06B6D4] text-white flex items-center justify-center shrink-0 shadow-lg shadow-[#2E5EFF]/20">
+                  <Sparkles className="w-5 h-5 sm:w-7 sm:h-7" />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="font-heading font-bold text-xl text-slate-900">Guia de Redação Nota 1000</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="font-heading font-bold text-sm sm:text-xl text-slate-900 leading-snug">Guia de Redação Nota 1000</h3>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                     Mais de 100 repertórios socioculturais organizados por eixos temáticos (Saúde, Educação, Meio Ambiente, Tecnologia) com citações e filósofos prontos para usar.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-md hover:border-[#2E5EFF]/40 transition-all flex gap-5">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#2E5EFF] to-[#06B6D4] text-white flex items-center justify-center shrink-0 shadow-lg shadow-[#2E5EFF]/20">
-                  <Clock className="w-7 h-7" />
+              <div className="bg-white p-4 sm:p-8 rounded-2xl border border-slate-200/80 shadow-md hover:border-[#2E5EFF]/40 transition-all flex flex-col sm:flex-row gap-3 sm:gap-5">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#2E5EFF] to-[#06B6D4] text-white flex items-center justify-center shrink-0 shadow-lg shadow-[#2E5EFF]/20">
+                  <Clock className="w-5 h-5 sm:w-7 sm:h-7" />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="font-heading font-bold text-xl text-slate-900">Cronograma Inteligente Automático</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed">
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="font-heading font-bold text-sm sm:text-xl text-slate-900 leading-snug">Cronograma Inteligente Automático</h3>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                     Sistemas pré-configurados de 30, 60, 90 e 120 dias. Saiba exatamente o que estudar a cada dia da semana, acompanhando seu progresso em tempo real.
                   </p>
                 </div>
@@ -374,114 +374,114 @@ export default function App() {
               </p>
             </div>
 
-            {/* Grid 4 Áreas + Redação */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Grid 4 Áreas + Redação - 2 por linha no mobile */}
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
               
               {/* Card 1 - Linguagens */}
-              <div className="bg-slate-800/90 rounded-2xl p-6 border border-slate-700/80 hover:border-[#2E5EFF] transition-all space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-blue-500/20 text-[#2E5EFF] flex items-center justify-center font-bold">
-                    <BookOpen className="w-6 h-6" />
+              <div className="bg-slate-800/90 rounded-2xl p-4 sm:p-6 border border-slate-700/80 hover:border-[#2E5EFF] transition-all space-y-2.5 sm:space-y-4">
+                <div className="flex items-center justify-between gap-1">
+                  <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-blue-500/20 text-[#2E5EFF] flex items-center justify-center font-bold">
+                    <BookOpen className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <span className="text-xs font-bold bg-blue-500/20 text-blue-300 px-2.5 py-1 rounded-md">
+                  <span className="text-[10px] sm:text-xs font-bold bg-blue-500/20 text-blue-300 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md shrink-0">
                     24 Capítulos
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-xl text-white mb-2">Linguagens & Códigos</h3>
+                  <h3 className="font-heading font-bold text-sm sm:text-xl text-white mb-1 sm:mb-2 leading-snug">Linguagens & Códigos</h3>
                   <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
                     Gramática Aplicada, Interpretação de Texto, Escolas Literárias, Funções da Linguagem, Artes e Educação Física.
                   </p>
                 </div>
-                <div className="pt-2 border-t border-slate-700 text-xs text-slate-400 flex items-center justify-between">
-                  <span>250+ Questões Comentadas</span>
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                <div className="pt-2 border-t border-slate-700 text-[10px] sm:text-xs text-slate-400 flex items-center justify-between">
+                  <span>250+ Questões</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400" />
                 </div>
               </div>
 
               {/* Card 2 - Matemática */}
-              <div className="bg-slate-800/90 rounded-2xl p-6 border border-slate-700/80 hover:border-[#06B6D4] transition-all space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-cyan-500/20 text-[#06B6D4] flex items-center justify-center font-bold">
-                    <TrendingUp className="w-6 h-6" />
+              <div className="bg-slate-800/90 rounded-2xl p-4 sm:p-6 border border-slate-700/80 hover:border-[#06B6D4] transition-all space-y-2.5 sm:space-y-4">
+                <div className="flex items-center justify-between gap-1">
+                  <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-cyan-500/20 text-[#06B6D4] flex items-center justify-center font-bold">
+                    <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <span className="text-xs font-bold bg-cyan-500/20 text-cyan-300 px-2.5 py-1 rounded-md">
+                  <span className="text-[10px] sm:text-xs font-bold bg-cyan-500/20 text-cyan-300 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md shrink-0">
                     22 Capítulos
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-xl text-white mb-2">Matemática & Tecnologias</h3>
+                  <h3 className="font-heading font-bold text-sm sm:text-xl text-white mb-1 sm:mb-2 leading-snug">Matemática & Tecnologias</h3>
                   <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
                     Geometria Plana e Espacial, Funções, Porcentagem, Estatística, Matemática Financeira, Probabilidade e Escalas.
                   </p>
                 </div>
-                <div className="pt-2 border-t border-slate-700 text-xs text-slate-400 flex items-center justify-between">
-                  <span>280+ Questões Comentadas</span>
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                <div className="pt-2 border-t border-slate-700 text-[10px] sm:text-xs text-slate-400 flex items-center justify-between">
+                  <span>280+ Questões</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400" />
                 </div>
               </div>
 
               {/* Card 3 - Ciências da Natureza */}
-              <div className="bg-slate-800/90 rounded-2xl p-6 border border-slate-700/80 hover:border-emerald-500 transition-all space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
-                    <Zap className="w-6 h-6" />
+              <div className="bg-slate-800/90 rounded-2xl p-4 sm:p-6 border border-slate-700/80 hover:border-emerald-500 transition-all space-y-2.5 sm:space-y-4">
+                <div className="flex items-center justify-between gap-1">
+                  <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">
+                    <Zap className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <span className="text-xs font-bold bg-emerald-500/20 text-emerald-300 px-2.5 py-1 rounded-md">
+                  <span className="text-[10px] sm:text-xs font-bold bg-emerald-500/20 text-emerald-300 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md shrink-0">
                     30 Capítulos
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-xl text-white mb-2">Ciências da Natureza</h3>
+                  <h3 className="font-heading font-bold text-sm sm:text-xl text-white mb-1 sm:mb-2 leading-snug">Ciências da Natureza</h3>
                   <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
                     Biologia (Ecologia e Genética), Física (Mecânica e Ondulatória), Química (Estequiometria e Orgânica).
                   </p>
                 </div>
-                <div className="pt-2 border-t border-slate-700 text-xs text-slate-400 flex items-center justify-between">
-                  <span>300+ Questões Comentadas</span>
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                <div className="pt-2 border-t border-slate-700 text-[10px] sm:text-xs text-slate-400 flex items-center justify-between">
+                  <span>300+ Questões</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400" />
                 </div>
               </div>
 
               {/* Card 4 - Ciências Humanas */}
-              <div className="bg-slate-800/90 rounded-2xl p-6 border border-slate-700/80 hover:border-indigo-500 transition-all space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
-                    <Compass className="w-6 h-6" />
+              <div className="bg-slate-800/90 rounded-2xl p-4 sm:p-6 border border-slate-700/80 hover:border-indigo-500 transition-all space-y-2.5 sm:space-y-4">
+                <div className="flex items-center justify-between gap-1">
+                  <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                    <Compass className="w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <span className="text-xs font-bold bg-indigo-500/20 text-indigo-300 px-2.5 py-1 rounded-md">
+                  <span className="text-[10px] sm:text-xs font-bold bg-indigo-500/20 text-indigo-300 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md shrink-0">
                     24 Capítulos
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-xl text-white mb-2">Ciências Humanas</h3>
+                  <h3 className="font-heading font-bold text-sm sm:text-xl text-white mb-1 sm:mb-2 leading-snug">Ciências Humanas</h3>
                   <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
                     História do Brasil e Geral, Geografia Física e Urbana, Filosofia Antiga a Contemporânea e Sociologia.
                   </p>
                 </div>
-                <div className="pt-2 border-t border-slate-700 text-xs text-slate-400 flex items-center justify-between">
-                  <span>220+ Questões Comentadas</span>
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                <div className="pt-2 border-t border-slate-700 text-[10px] sm:text-xs text-slate-400 flex items-center justify-between">
+                  <span>220+ Questões</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400" />
                 </div>
               </div>
 
               {/* Card 5 - Redação Nota 1000 */}
-              <div className="bg-gradient-to-br from-amber-900/50 to-slate-800 rounded-2xl p-6 border border-amber-500/50 lg:col-span-2 hover:border-amber-400 transition-all space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
-                    <Award className="w-6 h-6 text-amber-400" />
+              <div className="bg-gradient-to-br from-amber-900/50 to-slate-800 rounded-2xl p-4 sm:p-6 border border-amber-500/50 col-span-2 lg:col-span-2 hover:border-amber-400 transition-all space-y-2.5 sm:space-y-4">
+                <div className="flex items-center justify-between gap-1">
+                  <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+                    <Award className="w-5 h-5 sm:w-6 sm:h-6 text-amber-400" />
                   </div>
-                  <span className="text-xs font-bold bg-amber-500/20 text-amber-300 px-3 py-1 rounded-md">
+                  <span className="text-[10px] sm:text-xs font-bold bg-amber-500/20 text-amber-300 px-2 py-0.5 sm:px-3 sm:py-1 rounded-md shrink-0">
                     Módulo Bônus Exclusivo
                   </span>
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-2xl text-white mb-2">Guia Completo de Redação Nota 1000</h3>
-                  <p className="text-slate-300 text-sm leading-relaxed">
+                  <h3 className="font-heading font-bold text-base sm:text-2xl text-white mb-1 sm:mb-2 leading-snug">Guia Completo de Redação Nota 1000</h3>
+                  <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
                     Aprenda a estruturar o texto dissertativo-argumentativo perfeito. Inclui mais de 100 repertórios socioculturais categorizados por temas, argumentos coringa e modelos de proposta de intervenção para garantir 200 pontos na Competência 5.
                   </p>
                 </div>
-                <div className="pt-2 border-t border-slate-700/80 text-xs text-amber-300 flex items-center justify-between">
+                <div className="pt-2 border-t border-slate-700/80 text-[10px] sm:text-xs text-amber-300 flex items-center justify-between">
                   <span>+100 Repertórios Categorizados</span>
                   <span className="font-bold">Incluso no valor de R$ 19,90</span>
                 </div>

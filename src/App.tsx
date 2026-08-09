@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Logo } from './components/Logo';
+import platformMockupImg from './assets/images/custom_mockup.webp';
 import { 
   BookOpen, 
   CheckCircle2, 
@@ -149,20 +150,17 @@ export default function App() {
       </header>
 
       {/* MAIN CONTENT */}
-      <main className="pt-24 sm:pt-28">
+      <main className="pt-20 sm:pt-24">
 
         {/* 2. HERO SECTION */}
-        <section className="relative overflow-hidden py-12 lg:py-20">
-          
-          {/* Subtle Background Glows */}
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-tr from-[#2E5EFF]/10 via-[#06B6D4]/5 to-transparent blur-3xl rounded-full pointer-events-none -z-10"></div>
+        <section className="relative overflow-hidden pt-6 pb-10 lg:pt-10 lg:pb-14 bg-white">
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto space-y-6">
+            <div className="text-center max-w-5xl mx-auto space-y-4 sm:space-y-6">
               
 
               {/* Main Headline */}
-              <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-[1.15]">
+              <h1 className="font-heading font-extrabold text-3xl sm:text-5xl lg:text-6xl text-slate-900 tracking-tight leading-[1.15] max-w-4xl mx-auto">
                 Estude para o ENEM <span className="text-[#2E5EFF]">2026</span> de forma simples, organizada e sem gastar uma fortuna
               </h1>
 
@@ -170,6 +168,16 @@ export default function App() {
               <p className="text-base sm:text-xl text-slate-600 max-w-3xl mx-auto font-normal leading-relaxed">
                 Tenha acesso a conteúdos didáticos, questões comentadas e um guia completo de redação em uma única plataforma.
               </p>
+
+              {/* Platform Image */}
+              <div className="pt-2 max-w-4xl mx-auto">
+                <img
+                  src={platformMockupImg}
+                  alt="Demonstração da plataforma Guia ENEM 2026"
+                  className="w-full h-auto mx-auto pointer-events-none"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
 
               {/* CTA Section */}
               <div className="pt-4 flex flex-col items-center gap-4">

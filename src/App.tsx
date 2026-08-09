@@ -170,10 +170,11 @@ export default function App() {
 
               {/* Platform Image */}
               <div className="pt-2 max-w-4xl mx-auto flex justify-center">
-                <img
-                  src="/mockup.webp"
-                  alt="Demonstração da plataforma Guia ENEM 2026"
-                  className="w-full h-auto max-w-3xl mx-auto pointer-events-none rounded-xl shadow-lg border border-slate-100/50"
+                <img 
+                  src="https://guia-enem-2026.vercel.app/marketing/demo-mockup.webp" 
+                  alt="Demonstração da plataforma Guia ENEM 2026 em laptop e celular"
+                  style={{ width: '100%', maxWidth: '1100px', height: 'auto', borderRadius: '12px' }}
+                  loading="lazy"
                 />
               </div>
 

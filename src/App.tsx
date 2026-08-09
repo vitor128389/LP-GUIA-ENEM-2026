@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Logo } from './components/Logo';
-import platformMockupImg from './assets/images/custom_mockup.webp';
+import platformMockupImg from './assets/images/user_mockup.png';
 import { 
   BookOpen, 
   CheckCircle2, 

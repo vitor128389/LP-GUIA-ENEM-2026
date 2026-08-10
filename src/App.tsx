@@ -214,71 +214,34 @@ export default function App() {
         </section>
 
 
-        {/* 3. SEÇÃO DE DOR / PROBLEMA */}
-        <section className="py-16 bg-white border-y border-slate-100">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
-              <span className="text-xs font-bold text-rose-600 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
-                Você se identifica com isso?
-              </span>
-              <h2 className="font-heading font-extrabold text-2xl sm:text-4xl text-slate-900 tracking-tight">
-                Estudar para o ENEM sozinho não precisa ser um caos desorganizado
-              </h2>
-              <p className="text-slate-600 text-sm sm:text-base">
-                A maioria dos candidatos reprova não por falta de esforço, mas por cometer esses 4 erros fatais na preparação:
-              </p>
-            </div>
 
-            {/* Pain Cards Grid - 2 per row (2x2) */}
-            <div className="grid grid-cols-2 gap-3 sm:gap-6">
-              
-              {/* Card 1 */}
-              <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2.5 sm:space-y-4">
-                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
-                  <Compass className="w-5 h-5 sm:w-6 sm:h-6" />
-                </div>
-                <h3 className="font-heading font-bold text-sm sm:text-lg text-slate-900 leading-snug">1. Dispersão de Material</h3>
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Perder horas procurando PDFs desatualizados na internet e assistindo a vídeos soltos no YouTube que não seguem a matriz oficial do ENEM.
-                </p>
-              </div>
 
-              {/* Card 2 */}
-              <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2.5 sm:space-y-4">
-                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
-                  <DollarSign className="w-5 h-5 sm:w-6 sm:h-6" />
-                </div>
-                <h3 className="font-heading font-bold text-sm sm:text-lg text-slate-900 leading-snug">2. Cursinho Absurdamente Caro</h3>
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Pagar mensalidades abusivas de R$ 300 a R$ 800/mês em cursinhos presenciais ou plataformas gigantescas cheias de aulas arrastadas.
-                </p>
-              </div>
 
-              {/* Card 3 */}
-              <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2.5 sm:space-y-4">
-                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
-                  <Clock className="w-5 h-5 sm:w-6 sm:h-6" />
-                </div>
-                <h3 className="font-heading font-bold text-sm sm:text-lg text-slate-900 leading-snug">3. Sem Saber por Onde Começar</h3>
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Abrir os livros sem ter um cronograma claro e ficar com aquela sensação angustiante de matéria acumulada e tempo perdido.
-                </p>
-              </div>
-
-              {/* Card 4 */}
-              <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-shadow space-y-2.5 sm:space-y-4">
-                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold">
-                  <FileText className="w-5 h-5 sm:w-6 sm:h-6" />
-                </div>
-                <h3 className="font-heading font-bold text-sm sm:text-lg text-slate-900 leading-snug">4. Redação sem Repertório</h3>
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Travar no tema da redação por não ter repertórios socioculturais curingas e perder pontos valiosos na Competência 2 e 3.
-                </p>
-              </div>
-
-            </div>
-
+        {/* VEJA COMO FUNCIONA POR DENTRO - DEMONSTRAÇÃO REAL (IFRAME) */}
+        <section id="demonstracao" className="py-[40px] px-[16px] md:py-[60px] md:px-[20px] text-center bg-[#F8FAFC]" style={{ padding: '60px 20px', textAlign: 'center', background: '#F8FAFC' }}>
+          <div className="max-w-[1100px] mx-auto">
+            <h2 className="font-heading font-semibold text-2xl md:text-[32px] text-[#0F172A] mb-3 leading-tight" style={{ fontFamily: "'Sora', sans-serif", fontSize: '32px', fontWeight: 600, color: '#0F172A', marginBottom: '12px' }}>
+              Veja como funciona por dentro
+            </h2>
+            <p className="text-[#64748B] text-sm md:text-base mb-8 max-w-2xl mx-auto" style={{ color: '#64748B', fontSize: '16px', marginBottom: '32px' }}>
+              Navegue pela plataforma de verdade antes de comprar — sem precisar criar conta.
+            </p>
+            <iframe 
+              src="https://guia-enem-2026.vercel.app/demo" 
+              className="w-full max-w-[1100px] h-[500px] md:h-[650px] mx-auto block border-none rounded-[24px] shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
+              style={{ 
+                width: '100%', 
+                maxWidth: '1100px', 
+                border: 'none', 
+                borderRadius: '24px', 
+                boxShadow: '0 20px 60px rgba(0,0,0,0.15)' 
+              }}
+              loading="lazy"
+              title="Demonstração da plataforma Guia ENEM 2026"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </section>
 
@@ -546,35 +509,6 @@ export default function App() {
 
             </div>
 
-          </div>
-        </section>
-
-
-        {/* VEJA COMO FUNCIONA POR DENTRO - DEMONSTRAÇÃO REAL (IFRAME) */}
-        <section id="demonstracao" className="py-[40px] px-[16px] md:py-[60px] md:px-[20px] text-center bg-[#F8FAFC]" style={{ padding: '60px 20px', textAlign: 'center', background: '#F8FAFC' }}>
-          <div className="max-w-[1100px] mx-auto">
-            <h2 className="font-heading font-semibold text-2xl md:text-[32px] text-[#0F172A] mb-3 leading-tight" style={{ fontFamily: "'Sora', sans-serif", fontSize: '32px', fontWeight: 600, color: '#0F172A', marginBottom: '12px' }}>
-              Veja como funciona por dentro
-            </h2>
-            <p className="text-[#64748B] text-sm md:text-base mb-8 max-w-2xl mx-auto" style={{ color: '#64748B', fontSize: '16px', marginBottom: '32px' }}>
-              Navegue pela plataforma de verdade antes de comprar — sem precisar criar conta.
-            </p>
-            <iframe 
-              src="https://guia-enem-2026.vercel.app/demo" 
-              className="w-full max-w-[1100px] h-[500px] md:h-[650px] mx-auto block border-none rounded-[24px] shadow-[0_20px_60px_rgba(0,0,0,0.15)]"
-              style={{ 
-                width: '100%', 
-                maxWidth: '1100px', 
-                border: 'none', 
-                borderRadius: '24px', 
-                boxShadow: '0 20px 60px rgba(0,0,0,0.15)' 
-              }}
-              loading="lazy"
-              title="Demonstração da plataforma Guia ENEM 2026"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
           </div>
         </section>
 
